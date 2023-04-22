@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="30dp"
+    app:columnCount="8"
+    app:rowCount="8">
+
+    <TextView
+        android:id="@+id/title"
+        android:gravity="center"
+        android:text="@string/addAlarmtext"
+        android:textSize="24sp"
+        app:layout_column="0"
+        app:layout_columnSpan="8"
+        app:layout_columnWeight="1"
+        app:layout_row="0"
+        app:layout_rowSpan="1" />
+
+
+    <TextView
+        android:id="@+id/editTextTime"
+        android:gravity="center"
+        android:text="@string/_08_00"
+        android:textSize="50sp"
+        app:layout_column="0"
+        app:layout_columnSpan="8"
+        app:layout_columnWeight="1"
+        app:layout_row="1"
+        app:layout_rowSpan="1"
+        app:layout_rowWeight="1" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/ring_item"
+        android:clickable="true"
+        android:focusable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:minHeight="48dp"
+
+        android:padding="5dp"
+        app:layout_column="0"
+        app:layout_columnSpan="8"
+        app:layout_columnWeight="1"
+        app:layout_row="2"
+        app:layout_rowSpan="1">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ring"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_ring"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/ring_cut"
+            android:clickable="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="?attr/actionModeCutDrawable"
+            app:layout_constraintEnd_toEndOf="@+id/ring"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/repeat_item"
+        android:clickable="true"
+        android:descendantFocusability="blocksDescendants"
+        android:focusable="true"
+        android:minHeight="48dp"
+        android:onClick="onClick"
+        android:padding="5dp"
+        app:layout_column="0"
+        app:layout_columnSpan="8"
+        app:layout_columnWeight="1"
+        app:layout_row="3"
+        app:layout_rowSpan="1">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="@string/repeattext"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/repeat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/default_one"
+            android:textSize="15sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+    <!--<LinearLayout
+        android:id="@+id/test111"
+        app:layout_column="0"
+        app:layout_columnSpan="8"
+        app:layout_columnWeight="1"
+        app:layout_row="4"
+        app:layout_rowSpan="1"
+        app:layout_rowWeight="1"
+        android:orientation="horizontal">
+
+    </LinearLayout>-->
+</androidx.gridlayout.widget.GridLayout>
+
+
+
+

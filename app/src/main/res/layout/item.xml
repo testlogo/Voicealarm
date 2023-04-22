@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.gridlayout.widget.GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:descendantFocusability="blocksDescendants"
+    android:focusable="auto"
+    android:padding="15dp"
+    app:columnCount="6"
+    app:rowCount="4">
+
+    <TextView
+        android:id="@+id/timeShow"
+        android:text="@string/_08_30"
+        android:textColor="@color/black"
+        android:textSize="34sp"
+        app:layout_column="0"
+        app:layout_columnSpan="2"
+        app:layout_row="0"
+        app:layout_rowSpan="2"
+        app:layout_rowWeight="1" />
+
+    <TextView
+        android:id="@+id/ampmShow"
+        android:gravity="center|start|end"
+        android:text="@string/pm"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_column="3"
+        app:layout_columnSpan="2"
+        app:layout_columnWeight="1"
+        app:layout_row="0"
+        app:layout_rowSpan="2"
+        app:layout_rowWeight="1" />
+
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switchShow"
+        android:gravity="center|end"
+        app:layout_column="5"
+        app:layout_columnSpan="1"
+        app:layout_row="0"
+        app:layout_rowSpan="2"
+        app:layout_rowWeight="1" />
+
+    <CheckBox
+        android:id="@+id/BoxShow"
+        android:textColor="@color/black"
+        android:visibility="invisible"
+        app:layout_column="5"
+        app:layout_columnSpan="1"
+        app:layout_row="0" />
+
+
+    <TextView
+        android:id="@+id/repeatShow"
+        android:layout_width="wrap_content"
+
+        android:layout_height="match_parent"
+        android:textColor="@color/black"
+        app:layout_column="0"
+        app:layout_row="3" />
+
+    <!--响应时间-->
+    <TextView
+        android:id="@+id/NextRingTimeShow"
+        android:text="@string/date"
+        android:textColor="@color/black"
+        app:layout_column="1"
+        app:layout_columnSpan="5"
+        app:layout_columnWeight="1"
+        app:layout_row="3"
+        app:layout_rowSpan="1"
+        app:layout_rowWeight="0" />
+
+</androidx.gridlayout.widget.GridLayout>

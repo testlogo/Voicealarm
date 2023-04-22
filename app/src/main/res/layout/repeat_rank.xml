@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    app:behavior_hideable="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/only_one"
+        style="@style/def_button"
+        android:text="@string/only_one" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/workday"
+        style="@style/def_button"
+        android:text="@string/workday" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/everyday"
+        style="@style/def_button"
+        android:text="@string/everyday" />
+
+    <androidx.constraintlayout.utils.widget.MotionButton
+        android:id="@+id/custom"
+        style="@style/def_button"
+        android:text="@string/custom" />
+</androidx.appcompat.widget.LinearLayoutCompat>
